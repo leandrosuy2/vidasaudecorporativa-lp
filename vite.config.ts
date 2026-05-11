@@ -12,4 +12,12 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
+  vite: {
+    preview: {
+      allowedHosts: [
+        "lps-vidasaudecorporativa-lp.blm7eu.easypanel.host",
+        ".easypanel.host",
+      ],
+    },
+  },
 });
