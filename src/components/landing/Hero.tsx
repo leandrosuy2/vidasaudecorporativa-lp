@@ -40,7 +40,7 @@ export function Hero() {
                 Empresas conscientes
               </p>
               <h1 className="font-elegant mt-2 text-[1.7rem] font-semibold leading-[1.1] tracking-tight text-white sm:text-4xl md:text-[2.5rem] lg:text-[clamp(1.85rem,2.6vw,2.75rem)] xl:text-[2.85rem]">
-                potencializam{" "}
+                Potencializam{" "}
                 <span className="text-gradient-gold font-semibold">PESSOAS</span> que transformam{" "}
                 <span className="text-gradient-gold font-semibold">RESULTADOS</span>
               </h1>

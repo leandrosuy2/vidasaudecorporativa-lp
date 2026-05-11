@@ -16,10 +16,10 @@ const shim = 'export { default } from "./index.js";\n';
 mkdirSync(serverDir, { recursive: true });
 
 if (!existsSync(indexPath)) {
-  console.warn(
-    "[ensure-preview-server] dist/server/index.js missing — run `npm run build` before preview.",
+  console.error(
+    "[ensure-preview-server] dist/server/index.js missing — run `npm run build` or use `npm start` (builds if needed).",
   );
-  process.exit(0);
+  process.exit(1);
 }
 
 writeFileSync(serverPath, shim, "utf8");

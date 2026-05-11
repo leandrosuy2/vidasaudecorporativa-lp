@@ -7,9 +7,8 @@
     "dev": "vite dev",
     "build": "vite build",
     "build:dev": "vite build --mode development",
-    "prestart": "node scripts/ensure-preview-server.mjs",
-    "start": "vite preview --host 0.0.0.0 --port 3000",
-    "preview": "node scripts/ensure-preview-server.mjs && vite preview",
+    "start": "node scripts/start-production.mjs",
+    "preview": "node scripts/start-production.mjs",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
