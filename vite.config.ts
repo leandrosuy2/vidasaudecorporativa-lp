@@ -10,11 +10,12 @@ import { previewServerEntryShim } from "./vite-plugin-preview-server-shim";
 // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
 // @cloudflare/vite-plugin builds from this — wrangler.jsonc main alone is insufficient.
 export default defineConfig({
+  // Top-level `plugins` is merged by @lovable.dev/vite-tanstack-config (not only vite.plugins).
+  plugins: [previewServerEntryShim()],
   tanstackStart: {
     server: { entry: "server" },
   },
   vite: {
-    plugins: [previewServerEntryShim()],
     preview: {
       allowedHosts: [
         "lps-vidasaudecorporativa-lp.blm7eu.easypanel.host",
